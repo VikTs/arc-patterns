@@ -1,0 +1,17 @@
+{
+  "name": "ms-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently \"npm run start:todo-creator\" \"npm run start:todo-service\" \"npm run start:todo-publisher\"",
+    "start:todo-service": "node todo-service",
+    "start:todo-creator": "node todo-creator",
+    "start:todo-publisher": "node todo-publisher"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "cote": "^0.14.1"
+  }
+}
